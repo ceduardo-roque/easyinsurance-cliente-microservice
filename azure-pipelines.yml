@@ -20,6 +20,7 @@ steps:
 
 - task: Gradle@2
   inputs:
+    workingDirectory: 'cliente'
     gradleWrapperFile: 'gradlew'
     tasks: 'build'
     publishJUnitResults: true

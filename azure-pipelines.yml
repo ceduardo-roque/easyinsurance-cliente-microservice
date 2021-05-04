@@ -20,8 +20,8 @@ steps:
 
 - task: Gradle@2
   inputs:
-    workingDirectory: 'cliente'
     gradleWrapperFile: 'gradlew'
+    cwd: 'cliente'
     tasks: 'build'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
